@@ -1,18 +1,18 @@
 import React from "react";
 
-import { Label } from "./Label";
-import { Input } from "./Input";
+import { Label } from "./Inputs/Label";
+import { Input } from "./Inputs/Input";
 
 const InputForm = (props) => {
-  const { children = "...", type='text'} = props;
+  const { children = "...", type='text',placeholder="..."} = props;
   return (
     <div className="mb-6">
 
       <Label htmlFor={`${type}`} >{`${children}`}</Label>
-      <Input type={`${type}`} Id={`${type}`} placeholder={`${children}`} />
+      <Input type={`${type}`} Id={`${type}`} placeholder={`${placeholder}`} />
 
     </div>
   );
 };
 
-export default InputForm;
+export {InputForm};
