@@ -4,12 +4,12 @@ import { Label } from "./Inputs/Label";
 import { Input } from "./Inputs/Input";
 
 const InputForm = (props) => {
-  const { children = "...", type='text',placeholder="..."} = props;
+  const { children = "...", type='text',name,placeholder="...",Id} = props;
   return (
     <div className="mb-6">
 
-      <Label htmlFor={`${type}`} >{`${children}`}</Label>
-      <Input type={`${type}`} Id={`${type}`} placeholder={`${placeholder}`} />
+      <Label name={`${name}`} >{`${children}`}</Label>
+      <Input name={`${name}`} type={`${type}`} placeholder={`${placeholder}`} />
 
     </div>
   );

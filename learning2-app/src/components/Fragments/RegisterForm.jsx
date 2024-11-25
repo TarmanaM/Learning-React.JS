@@ -1,25 +1,26 @@
 import { InputForm } from "../Elements/Index";
 import { Button5 } from "../Elements/Buttons/Button";
 const RegisterForm = (props) => {
-  const { Action } = props;
+  const { Action , children } = props;
   return (
     <form action={`${Action}`}>
-      <InputForm Id="username" type="email" placeholder="E5oI8@example.com">
+      <InputForm name="username" type="email" placeholder="E5oI8@example.com">
         Username
       </InputForm>
-      <InputForm Id="name" type="text" placeholder="John Doe">
+      <InputForm name="name" type="text" placeholder="John Doe">
         Nama
       </InputForm>
-      <InputForm Id="phone" type="number" placeholder="08...">
+      <InputForm name="phone" type="number" placeholder="08...">
         Phone
       </InputForm>
-      <InputForm Id="password" type="password">
+      <InputForm name="password" type="password">
         Password
       </InputForm>
-      <InputForm Id="repassword" type="password">
-        Password
+      <InputForm name="repassword" type="password">
+        Cofirm Password
       </InputForm>
       <Button5>Register</Button5>
+      {children}
     </form>
   );
 };
