@@ -4,7 +4,7 @@ import { RegisterForm } from "../Fragments/RegisterForm";
 const RegisterPage = (props) => { 
     const {Action}=props;
     return(
-    <AuthLayout Title ="Login">
+    <AuthLayout Title ="Register">
         <RegisterForm Action={`${Action}`}></RegisterForm>
     </AuthLayout>
 )}
