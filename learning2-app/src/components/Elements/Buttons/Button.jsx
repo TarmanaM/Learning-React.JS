@@ -74,10 +74,10 @@ class Button extends React.Component {
   
   // func arrow dg parameter children with deafault
   const Button5= (props) => {
-    const {children='...', Attributnya="bg-black"}= props;
+    const {children='...', Attributnya="bg-black", size="w-full"}= props;
     return (
       <button
-        className={`h-10 px-6 font-semibold rounded-md ${Attributnya} w-full  text-white`}
+        className={`h-10 px-x font-semibold rounded-md ${Attributnya} ${size}  text-white`}
         type="submit"
       >
         {children}
